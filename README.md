@@ -5,21 +5,43 @@
 [![Xcode](https://img.shields.io/badge/Xcode-15.0+-blue.svg)](https://developer.apple.com/xcode/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![FOSS](https://img.shields.io/badge/FOSS-Yes-brightgreen.svg)](https://github.com/noncent/bruos)
+[![Release](https://img.shields.io/badge/Release-v1.0-blue.svg)](https://github.com/noncent/bruos/releases)
 
-A modern, native macOS application for bulk file renaming with an intuitive 3-pane interface. Built with SwiftUI for a native macOS experience.
+> A modern, native macOS application for bulk file renaming with an intuitive 3-pane interface. Built with SwiftUI for a native macOS experience.
 
 ![Bruos App Icon](public/icons/512.png)
 
+## 🚀 Quick Download
+
+**[Download Bruos v1.0](https://github.com/noncent/bruos/releases/latest)** - Ready-to-use macOS app
+
+*Requires macOS 13.0+ | Apple Silicon (ARM64) or Intel Mac*
+
 ## 📸 Screenshots
 
-*Screenshots coming soon - showing the 3-pane interface, rename settings, and About dialog*
+### 🏠 Main Interface
+![Bruos Home Interface](public/home.png)
+*The main 3-pane interface showing file explorer (left), file list with preview (center), and rename settings (right)*
 
-## ✨ Recent Updates
+### ⚙️ Working with Files
+![Bruos Working Interface](public/working.png)
+*File selection and rename configuration in action - demonstrating the real-time preview functionality*
 
-- **Custom App Icons**: Beautiful PNG icons integrated for all macOS icon sizes
-- **Help Menu**: Custom Help menu with "About Bruos" option
-- **About Dialog**: Professional About popup with creator information and FOSS declaration
-- **Enhanced UI**: Improved padding and spacing for better visual hierarchy
+### 🎯 Key Features Shown
+- **Left Panel**: File explorer with folder navigation
+- **Center Panel**: File list with checkboxes and preview
+- **Right Panel**: Comprehensive rename settings and options
+- **Real-time Preview**: See changes before applying
+- **Professional UI**: Clean, modern macOS design
+
+## ✨ What's New in v1.0
+
+- 🎨 **Custom App Icons**: Beautiful PNG icons integrated for all macOS icon sizes
+- 🆘 **Help Menu**: Custom Help menu with "About Bruos" option
+- ℹ️ **About Dialog**: Professional About popup with creator information and FOSS declaration
+- 🎯 **Enhanced UI**: Improved padding and spacing for better visual hierarchy
+- ⚡ **Release Build**: Optimized and code-signed for smooth operation
+- 📦 **Ready to Use**: Download and run immediately
 
 ## Features
 
@@ -107,9 +129,15 @@ Bruos/
 - **Xcode**: 15.0 or later
 - **Swift**: 5.0 or later
 
-## Installation
+## 📥 Installation
 
-### From Source
+### 🚀 Quick Install (Recommended)
+1. **[Download the latest release](https://github.com/noncent/bruos/releases/latest)**
+2. Extract `Bruos-v1.0-Release.zip`
+3. Move `Bruos.app` to your Applications folder
+4. Launch the app (right-click → "Open" on first launch)
+
+### 🔧 Build from Source
 1. Clone the repository:
    ```bash
    git clone https://github.com/noncent/bruos.git
@@ -118,22 +146,22 @@ Bruos/
 2. Open `Bruos.xcodeproj` in Xcode
 3. Build and run the project (⌘+R)
 
-### Build Requirements
-- **Xcode**: 15.0 or later
-- **macOS**: 13.0 or later (for development)
-- **Swift**: 5.0 or later
+### 📋 Requirements
+- **macOS**: 13.0 or later
+- **Architecture**: Apple Silicon (ARM64) or Intel Mac
+- **For Development**: Xcode 15.0+, Swift 5.0+
 
-### Quick Start
-1. Launch the app
-2. Navigate to your desired folder using the left sidebar
-3. Select files you want to rename
-4. Configure rename settings in the right panel
-5. Preview changes in the main panel
-6. Click "Apply Changes" to rename files
+### 🎯 Quick Start Guide
+1. **Launch** the app
+2. **Navigate** to your desired folder using the left sidebar
+3. **Select files** you want to rename (checkboxes)
+4. **Configure settings** in the right panel
+5. **Preview changes** in the main panel
+6. **Apply changes** to rename files
 
-## Usage
+## 📖 Usage
 
-### Basic Workflow
+### 🎯 Basic Workflow
 1. **Open the app** - Starts in Documents directory
 2. **Navigate** - Use the left sidebar to browse folders
 3. **Select files** - Check files you want to rename
@@ -141,22 +169,32 @@ Bruos/
 5. **Preview changes** - See real-time preview in the main panel
 6. **Apply changes** - Click "Apply Changes" to rename files
 
-### Advanced Features
-- **Drag & Drop**: Drag files from Finder into the app
-- **Search**: Use the search bar to quickly find files
-- **Regex**: Use advanced regex patterns for complex renaming
-- **Help Menu**: Access "About Bruos" from the Help menu
-- **About Dialog**: View app information, creator details, and FOSS declaration
-- **Profiles**: Save and reuse rename configurations (coming soon)
+### ⚡ Advanced Features
+- **🖱️ Drag & Drop**: Drag files from Finder into the app
+- **🔍 Search**: Use the search bar to quickly find files
+- **🔧 Regex**: Use advanced regex patterns for complex renaming
+- **🆘 Help Menu**: Access "About Bruos" from the Help menu
+- **ℹ️ About Dialog**: View app information, creator details, and FOSS declaration
+- **💾 Profiles**: Save and reuse rename configurations (coming soon)
 
-## Development
+### 🎨 Rename Examples
 
-### Project Setup
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `IMG_001.jpg` | Add prefix "Vacation_" | `Vacation_IMG_001.jpg` |
+| `my file name.txt` | Snake case | `my_file_name.txt` |
+| `Document (1).pdf` | Remove numbers | `Document ().pdf` |
+| `photo1.jpg` | Add counter | `photo_001.jpg` |
+
+## 🛠️ Development
+
+### 🏗️ Project Setup
 The project uses a standard Xcode project structure with:
-- SwiftUI for UI
-- Combine for reactive programming
-- FileManager for file operations
-- Regular expressions for advanced renaming
+- **SwiftUI** for modern, declarative UI
+- **Combine** for reactive programming
+- **FileManager** for file operations
+- **Regular expressions** for advanced renaming
+- **MVVM Architecture** for clean code organization
 
 ### Key Components
 
@@ -178,38 +216,74 @@ Core logic for generating new filenames:
 - Handles edge cases and validation
 - Supports complex transformations
 
-### Future Enhancements
-- [ ] Undo/Redo functionality
-- [ ] Profiles/Presets system
-- [ ] Finder extension for right-click integration
-- [ ] Batch operations
-- [ ] File filtering
-- [ ] Custom rename rules
-- [ ] Export/Import configurations
-- [ ] Additional app icon themes
-- [ ] Keyboard shortcuts for common operations
+### 🚀 Future Enhancements
+- [ ] **Undo/Redo functionality** - Full undo/redo support
+- [ ] **Profiles/Presets system** - Save and load rename configurations
+- [ ] **Finder extension** - Right-click integration
+- [ ] **Batch operations** - Process multiple folders
+- [ ] **File filtering** - Advanced file type filtering
+- [ ] **Custom rename rules** - User-defined patterns
+- [ ] **Export/Import configurations** - Share settings
+- [ ] **Additional app icon themes** - Multiple icon options
+- [ ] **Keyboard shortcuts** - Power user features
+- [ ] **Dark mode improvements** - Enhanced dark theme
+- [ ] **Accessibility features** - VoiceOver support
 
-## Contributing
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+We welcome contributions! Here's how you can help:
 
-## License
+1. **🍴 Fork** the repository
+2. **🌿 Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **💻 Make** your changes
+4. **🧪 Add** tests if applicable
+5. **📝 Commit** your changes (`git commit -m 'Add amazing feature'`)
+6. **📤 Push** to the branch (`git push origin feature/amazing-feature`)
+7. **🔄 Open** a Pull Request
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### 🐛 Bug Reports
+Found a bug? Please open an issue with:
+- macOS version
+- Steps to reproduce
+- Expected vs actual behavior
+- Screenshots if applicable
 
-## About the Creator
+### 💡 Feature Requests
+Have an idea? We'd love to hear it! Open an issue with:
+- Clear description
+- Use case
+- Mockups if applicable
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 About the Creator
 
 **Made with ❤️ by [Noncent (Nono)](https://github.com/noncent)**
 
 This app is completely **FOSS (Free and Open Source Software)** for everyone.
 
-## Acknowledgments
+### 🌟 Support the Project
+- ⭐ **Star** this repository
+- 🐛 **Report** bugs and issues
+- 💡 **Suggest** new features
+- 🔄 **Share** with others
 
-- Built with SwiftUI and native macOS frameworks
-- Inspired by modern file management applications
-- Designed following Apple's Human Interface Guidelines
-- Custom icons and UI enhancements for professional appearance
+## 🙏 Acknowledgments
+
+- **SwiftUI** and native macOS frameworks
+- **Apple's Human Interface Guidelines** for design inspiration
+- **Modern file management applications** for UX inspiration
+- **Open source community** for tools and libraries
+- **Custom icons and UI enhancements** for professional appearance
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#bruos---macos-bulk-rename-app)**
+
+Made with ❤️ by [Noncent](https://github.com/noncent) | [Report Bug](https://github.com/noncent/bruos/issues) | [Request Feature](https://github.com/noncent/bruos/issues)
+
+</div>
