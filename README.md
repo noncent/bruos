@@ -179,12 +179,74 @@ Bruos/
 
 ### 🎨 Rename Examples
 
+#### 📸 Photo Organization
 | Original | Pattern | Result |
 |----------|---------|--------|
 | `IMG_001.jpg` | Add prefix "Vacation_" | `Vacation_IMG_001.jpg` |
-| `my file name.txt` | Snake case | `my_file_name.txt` |
-| `Document (1).pdf` | Remove numbers | `Document ().pdf` |
+| `IMG_002.jpg` | Add prefix "Vacation_" | `Vacation_IMG_002.jpg` |
+| `IMG_003.jpg` | Add prefix "Vacation_" | `Vacation_IMG_003.jpg` |
 | `photo1.jpg` | Add counter | `photo_001.jpg` |
+| `photo2.jpg` | Add counter | `photo_002.jpg` |
+| `photo3.jpg` | Add counter | `photo_003.jpg` |
+
+#### 📄 Document Cleanup
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `my file name.txt` | Snake case | `my_file_name.txt` |
+| `My Document.pdf` | Snake case | `my_document.pdf` |
+| `Report 2024.docx` | Snake case | `report_2024.docx` |
+| `Document (1).pdf` | Remove numbers | `Document ().pdf` |
+| `Document (2).pdf` | Remove numbers | `Document ().pdf` |
+| `Document (3).pdf` | Remove numbers | `Document ().pdf` |
+
+#### 🔧 Case Transformations
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `my file name.txt` | UPPERCASE | `MY FILE NAME.TXT` |
+| `MY FILE NAME.TXT` | lowercase | `my file name.txt` |
+| `my file name.txt` | Capitalize Words | `My File Name.txt` |
+| `my file name.txt` | camelCase | `myFileName.txt` |
+| `my file name.txt` | PascalCase | `MyFileName.txt` |
+| `my file name.txt` | snake_case | `my_file_name.txt` |
+| `my file name.txt` | kebab-case | `my-file-name.txt` |
+| `my file name.txt` | dot.separated | `my.file.name.txt` |
+
+#### 🎯 Advanced Patterns
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `IMG_2024_01_15_001.jpg` | Remove prefix "IMG_" | `2024_01_15_001.jpg` |
+| `vacation_photo.jpg` | Add suffix "_backup" | `vacation_photo_backup.jpg` |
+| `file with spaces.txt` | Replace spaces with underscores | `file_with_spaces.txt` |
+| `file-with-dashes.txt` | Replace dashes with underscores | `file_with_dashes.txt` |
+| `document_v1_final.pdf` | Remove "_v1" | `document_final.pdf` |
+| `old_file_2023.txt` | Replace "2023" with "2024" | `old_file_2024.txt` |
+
+#### 📅 Date & Time Insertion
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `report.pdf` | Add creation date | `report_2024-10-02.pdf` |
+| `photo.jpg` | Add modification time | `photo_14-30-25.jpg` |
+| `document.docx` | Add current date | `document_2024-10-02.docx` |
+| `backup.zip` | Add timestamp | `backup_20241002_143025.zip` |
+
+#### 🔢 Numbering & Sequences
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `file1.txt` | Add leading zeros | `file001.txt` |
+| `file2.txt` | Add leading zeros | `file002.txt` |
+| `file3.txt` | Add leading zeros | `file003.txt` |
+| `document.pdf` | Add counter (1) | `document_1.pdf` |
+| `document.pdf` | Add counter (2) | `document_2.pdf` |
+| `document.pdf` | Add counter (3) | `document_3.pdf` |
+
+#### 🧹 Cleanup Operations
+| Original | Pattern | Result |
+|----------|---------|--------|
+| `file (copy).txt` | Remove "(copy)" | `file .txt` |
+| `file (1).txt` | Remove numbers in parentheses | `file ().txt` |
+| `file   with   spaces.txt` | Merge duplicate spaces | `file with spaces.txt` |
+| `file---with---dashes.txt` | Merge duplicate dashes | `file-with-dashes.txt` |
+| `file___with___underscores.txt` | Merge duplicate underscores | `file_with_underscores.txt` |
 
 ## 🛠️ Development
 
