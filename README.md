@@ -9,7 +9,7 @@
 
 > A modern, native macOS application for bulk file renaming with an intuitive 3-pane interface. Built with SwiftUI for a native macOS experience.
 
-![Bruos App Icon](./public/icons/512.png)
+![Bruos App Icon](public/icons/512.png)
 
 ## 🚀 Quick Download
 
@@ -20,11 +20,11 @@
 ## 📸 Screenshots
 
 ### 🏠 Main Interface
-![Bruos Home Interface](./public/home.png)
+![Bruos Home Interface](public/home.png)
 *The main 3-pane interface showing file explorer (left), file list with preview (center), and rename settings (right)*
 
 ### ⚙️ Working with Files
-![Bruos Working Interface](./public/working.png)
+![Bruos Working Interface](public/working.png)
 *File selection and rename configuration in action - demonstrating the real-time preview functionality*
 
 ### 🎯 Key Features Shown
